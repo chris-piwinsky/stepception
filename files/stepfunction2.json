@@ -1,0 +1,16 @@
+{
+  "Comment": "A simple Step Function with 2 Lambda calls",
+  "StartAt": "Lambda1",
+  "States": {
+    "Lambda1": {
+      "Type": "Task",
+      "Resource": "${lambda1}",
+      "Next": "Lambda2"
+    },
+    "Lambda2": {
+      "Type": "Task",
+      "Resource": "${lambda2}",
+      "End": true
+    }
+  }
+}

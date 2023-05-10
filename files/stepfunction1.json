@@ -1,0 +1,18 @@
+{
+  "Comment": "A simple Step Function with 2 Lambda calls",
+  "StartAt": "SubStep",
+  "States": {
+    "SubStep": {
+      "Type": "Task",
+      "Resource": "arn:aws:states:::states:startExecution",
+      "Parameters": {
+        "StateMachineArn": "${steparn}",
+        "Input": {
+          "NeedCallback": false,
+          "AWS_STEP_FUNCTIONS_STARTED_BY_EXECUTION_ID.$": "$$.Execution.Id"
+        }
+      },
+      "End": true
+    }
+  }
+}
