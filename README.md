@@ -13,12 +13,6 @@ I use a data lookup to recreate the lambda_function.zip file so any code change 
 1. Invoke Step function
 2. Step Function invokes second step function
 
-
-
-## Cache Flowchart
-
-![logicflow](./documentation/FlowDiagram.png)
-
 ## Prerequisites
 Before you begin, make sure you have the following prerequisites:
 
