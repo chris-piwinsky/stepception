@@ -12,7 +12,7 @@ I use a data lookup to recreate the lambda_function.zip file so any code change 
 
 ```mermaid
 graph TD;
-  Start[Start] --> Step1{Step 1}
+  Start[Start] --> Step1{SubStep}
   Step1 --> Step2{Step 2}
   Step2 --> Step3{Step 3}
   Step2 --> Step4{Step 4}
