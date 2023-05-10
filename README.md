@@ -4,11 +4,7 @@ Simple Terraform project creating a step function that calls a seperate step fun
 
 I use a data lookup to recreate the lambda_function.zip file so any code change will be picked up when deployed
 
-## Rough Topology
-
-![topology](./documentation/WarmStartup-Topology.png)
-
-### Step Function Topology
+### Topology
 
 ![topology](./documentation/Stepception.png)
 
