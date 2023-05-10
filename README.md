@@ -8,8 +8,9 @@ I use a data lookup to recreate the lambda_function.zip file so any code change 
 
 ![topology](./documentation/WarmStartup-Topology.png)
 
-### Step Function Flow
+### Step Function Topology
 
+![topology](./documentation/Stepception.png)
 
 
 ### Steps
