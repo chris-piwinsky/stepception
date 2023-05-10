@@ -8,6 +8,17 @@ I use a data lookup to recreate the lambda_function.zip file so any code change 
 
 ![topology](./documentation/WarmStartup-Topology.png)
 
+### Step Function Flow
+
+```mermaid
+graph TD;
+  Start[Start] --> Step1{Step 1}
+  Step1 --> Step2{Step 2}
+  Step2 --> Step3{Step 3}
+  Step2 --> Step4{Step 4}
+  Step3 --> End[End]
+  Step4 --> End
+
 ### Steps
 
 1. Invoke Step function
