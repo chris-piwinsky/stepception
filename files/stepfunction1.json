@@ -12,6 +12,11 @@
           "AWS_STEP_FUNCTIONS_STARTED_BY_EXECUTION_ID.$": "$$.Execution.Id"
         }
       },
+      "Next": "Lambda1"
+    },
+    "Lambda1": {
+      "Type": "Task",
+      "Resource": "${lambda1}",
       "End": true
     }
   }

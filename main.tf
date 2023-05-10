@@ -2,7 +2,8 @@ data "template_file" "step1" {
   template = file("./files/stepfunction1.json")
 
   vars = {
-    steparn = "${module.step2.state_machine_arn}"
+    lambda1 = module.lambda1.lambda_arn
+    steparn = module.step2.state_machine_arn
   }
 }
 
@@ -10,8 +11,8 @@ data "template_file" "step2" {
   template = file("./files/stepfunction2.json")
 
   vars = {
-    lambda1  = module.lambda1.lambda_arn
-    lambda2  = module.lambda2.lambda_arn
+    lambda1 = module.lambda1.lambda_arn
+    lambda2 = module.lambda2.lambda_arn
   }
 }
 
